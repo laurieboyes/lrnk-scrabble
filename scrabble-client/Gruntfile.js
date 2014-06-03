@@ -5,7 +5,13 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             dist: {
-                src: ['lib/**/*.js', 'src/**/*.js'],
+                src: [
+                    'lib/jquery.js',
+                    'lib/underscore.js',
+                    'lib/backbone.js',
+                    'lib/backbone-localstorage.js',
+                    'src/**/*.js'
+                ],
                 dest: 'build/js/scrabble-client.js'
             }
         },
