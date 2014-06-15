@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ScrabbleController {
 
 
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String hello() {
         return "What up";
     }
