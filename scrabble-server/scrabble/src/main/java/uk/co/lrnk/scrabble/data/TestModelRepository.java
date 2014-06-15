@@ -7,6 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 public interface TestModelRepository extends CrudRepository<TestModel, Long> {
 
     @Query
-    public setTestModel(TestModel testModel)
+    public TestModel getTestModelById(long id);
 
 }
