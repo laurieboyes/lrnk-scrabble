@@ -1,1 +1,1 @@
-var App = {};
+var App = {defaultUrl: '/scrabble/scrabble-backend/'};

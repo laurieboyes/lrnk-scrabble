@@ -17,6 +17,7 @@ App.AppView = Backbone.View.extend({
 
     updateThing: function(e) {
         this.model.set("value", $(e.currentTarget).val());
+        this.model.save();
     },
 
     render: function(){

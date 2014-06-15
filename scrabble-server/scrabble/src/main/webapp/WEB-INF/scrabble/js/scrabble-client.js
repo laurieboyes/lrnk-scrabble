@@ -12303,7 +12303,7 @@ return jQuery;
     }
     
 }).call(this, window, Backbone);
-var App = {};
+var App = {defaultUrl: '/scrabble/scrabble-backend/'};
 App.AppView = Backbone.View.extend({
     el: '#main',
 
@@ -12323,6 +12323,7 @@ App.AppView = Backbone.View.extend({
 
     updateThing: function(e) {
         this.model.set("value", $(e.currentTarget).val());
+        this.model.save();
     },
 
     render: function(){
@@ -12330,6 +12331,7 @@ App.AppView = Backbone.View.extend({
     }
 });
 App.TestModel = Backbone.Model.extend({
+    url : App.defaultUrl + 'testModel',
     defaults: {
         value: 'this is default'
     }
