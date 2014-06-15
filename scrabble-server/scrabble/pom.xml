@@ -11,6 +11,7 @@
 
     <properties>
         <spring-version>4.0.5.RELEASE</spring-version>
+        <org.springframework.data-version>1.5.2.RELEASE</org.springframework.data-version>
     </properties>
 
     <build>
@@ -42,6 +43,12 @@
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${org.springframework.data-version}</version>
         </dependency>
 
     </dependencies>
